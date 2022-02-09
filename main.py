@@ -43,7 +43,7 @@ print(ticket_medio)
 
 outlook = win32.Dispatch('outlook.application')
 mail = outlook.CreateItem(0)
-mail.To = 'pedrolucascardoso@id.uff.br'
+mail.To = '@gmail.com'
 mail.Subject = 'Relatório de Vendas'
 mail.HTMLBody = f'''
 <p>Prezados,</p>
@@ -60,7 +60,7 @@ mail.HTMLBody = f'''
 
 <p>Qualquer dúvida, estou à disposição.</p>
 <p>Att,</p>
-<p>Pedro</p>
+<p>Me</p>
 '''
 mail.Send()
 
